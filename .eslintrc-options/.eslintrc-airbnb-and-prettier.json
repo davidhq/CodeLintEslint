@@ -35,24 +35,13 @@
     "no-constant-condition": [2, { "checkLoops": false }]
   },
   "parserOptions": {
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
+    "ecmaVersion": "2019",
+    "sourceType": "module"
   },
   "overrides": [
     {
       "files": ["*.svelte", "**/*.svelte"],
-      "rules": {
-        "indent": 0
-      }
-    },
-    {
-      "files": ["*.todo-investigate-svelte-processor-directive-below-fails"],
-      "processor": "svelte3/svelte3",
-      "rules": {
-        "indent": 0
-      }
+      "processor": "svelte3/svelte3"
     }
   ],
   "env": {

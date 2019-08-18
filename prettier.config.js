@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['svelte'],
+  //plugins: ['svelte'],
   printWidth: 160,
   singleQuote: true,
   trailingComma: 'none'
