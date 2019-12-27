@@ -4,15 +4,11 @@
 
 Author of this composite package only provided some glue in a few hours / now turning into days (a lot of experimentation, blog posts and dead ends...), this is hard work of many people, in total 8145+ files here... and a few days of gluing it all together in a non-fragile and efficient way.
 
-"__Centralized__" means: on your own machine... one true source of what your JavaScript should look like ... before tackling this kind of new setup, I had config files and libraries all around my computer and I could not implement any changes or upgrades to the system (like adding `Svelte` support) **at all**. I barely got enough willpower to figure out how I have set up this thing one year ago, just to dismantle it and create this package which is clear, future-proof and should work as expected.
+"__Centralized__" means: on your own machine... one true source of what your JavaScript should look like ... before tackling this kind of new setup, I had config files and libraries all around my computer and I could not implement any changes or upgrades to the system (like adding `Svelte` support) at all.
 
-## Now back to the real thing:
+# Centralized setup for pretty and correct JavaScript 🚀
 
-# Very centralized setup for very pretty JavaScript 🚀
-
-Goals:
-
-To establish two aspects:
+Goals - to establish:
 
 - linting (showing visually where code could be better) (via [ESLint](https://eslint.org), of course)
 - rewriting code by pre-programmed standards (via [Prettier](https://prettier.io), of course)
@@ -47,15 +43,6 @@ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
 git clone https://github.com/davidhq/SublimeJsPrettier.git
 cd SublimeJsPrettier
 ```
-
-Do this:
-
-```
-git checkout 7442289bd489eb4360659c5bc22409d563169c90
-```
-
-... for now because master is still broken! -- See Problem 1
-
 
 ### Configure packages:
 
