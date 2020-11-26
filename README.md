@@ -86,9 +86,9 @@ Update or add (in right window) the key "js_prettier":
 ```json
 "js_prettier":
   {
+
     "additional_cli_args":
     {
-      "--config": "~/Misc/CodeLintEslint/prettier.config.js",
       "--plugin-search-dir": "~/Misc/CodeLintEslint"
     },
     "allow_inline_formatting": false,
@@ -99,9 +99,17 @@ Update or add (in right window) the key "js_prettier":
     ],
     "debug": false,
     "node_path": "",
-    "prettier_cli_path": "~/Misc/CodeLintEslint/node_modules/prettier/bin-prettier.js"
+    "prettier_cli_path": "",
+    "prettier_options":
+    {
+      "printWidth": 160,
+      "singleQuote": true,
+      "trailingComma": "none"
+    }
   },
 ```
+
+Change `prettier_options` field according to your needs. If `.prettierrc` is present in the project locally, it will use these options instead.
 
 ### Create symlinks for calling prettier and eslint from command-line-interface
 
@@ -112,6 +120,7 @@ ln -s ~/Misc/CodeLintEslint/node_modules/eslint/bin/eslint.js eslint
 ln -s ~/Misc/CodeLintEslint/node_modules/prettier/bin-prettier.js prettier
 ```
 
+This is also needed so that SublimeText can find the global prettier install if it is not installed locally in the project. See [docs here](https://packagecontrol.io/packages/JsPrettier).
 
 ## Currently open problems:
 

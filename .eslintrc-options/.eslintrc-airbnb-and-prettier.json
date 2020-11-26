@@ -5,6 +5,8 @@
     "arrow-body-style": 0,
     "no-await-in-loop": 0,
     "import/no-extraneous-dependencies": 0,
+    "import/extensions": 1,
+    "import/first": 0,
     "object-curly-newline": 0,
     "comma-dangle": 0,
     "global-require": 0,
@@ -36,7 +38,7 @@
     "no-constant-condition": [2, { "checkLoops": false }]
   },
   "parserOptions": {
-    "ecmaVersion": "2019",
+    "ecmaVersion": 2020,
     "sourceType": "module"
   },
   "overrides": [
