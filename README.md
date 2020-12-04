@@ -99,17 +99,24 @@ Update or add (in right window) the key "js_prettier":
     ],
     "debug": false,
     "node_path": "",
-    "prettier_cli_path": "",
+    "prettier_cli_path": "~/bin/prettier",
     "prettier_options":
     {
+      "arrowParens": "avoid",
       "printWidth": 160,
       "singleQuote": true,
-      "trailingComma": "none"
+      "tabWidth": 2,
+      "trailingComma": "none",
+      "useTabs": false
     }
   },
 ```
 
 Change `prettier_options` field according to your needs. If `.prettierrc` is present in the project locally, it will use these options instead.
+
+It is good to exactly specify the path to prettier binary (`prettier_cli_path`) than to let SublimeJsPrettier to try to resolve the path because this only caused problems!
+
+Downside is that even if project includes prettier package with some specific version, our global version (hopefully always up to date) will be used... and we hope that packages a) were also using the latest prettier b) prettier hasn't changed the API in between these versions if they are different
 
 ### Create symlinks for calling prettier and eslint from command-line-interface
 
